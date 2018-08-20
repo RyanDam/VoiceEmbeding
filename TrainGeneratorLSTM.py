@@ -199,7 +199,7 @@ class JsonIterator(Iterator):
                 batch_y[i, label] = 1.
         else:
             return batch_x
-        return batch_x[:,:,0, 0], batch_y
+        return batch_x[:,:,0, 0], batch_x[:,:,0, 0]
 
     def next(self):
         """For python 2.x.
